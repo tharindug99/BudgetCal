@@ -1,6 +1,91 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Arimo:wght@500&family=Oswald:wght@600&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Quicksand&family=Roboto+Mono&family=Roboto:wght@100&display=swap');
+
+
+body {
+  margin: 0 ;
+  padding: 0%;
+  text-align: center;
+  background-color: rgb(181, 171, 171);
+  
+}
+
+h1{
+  font-family: Arimo;
+}
+
+.title{
+  background-color: rgb(210, 137, 0);
+  padding: 2rem 1rem;
+  border-radius: 2rem;
+  color: white;
+  letter-spacing: 3px;
+  box-shadow: 2px 4px 6px #333;
+  margin-bottom: 2rem;
+}
+
+.answer{
+  background-color: orange;
+  padding: 2rem 1rem;
+  border-radius: 2rem;
+  color: white;
+  letter-spacing: 3px;
+  box-shadow: 2px 4px 6px #333;
+  margin-bottom: 2rem;
+}
+
+.btn-clear{
+  background-color: red;
+  color: aliceblue;
+  border-color: aliceblue;
+  padding: 1.1rem;
+  margin-top: 3rem;
+  font-family: Oswald;
+  font-weight: 1500;
+  border-radius: 1.2rem;
+  box-shadow: 1px 1px 1px #333;
+}
+
+.btn-clear:hover{
+  background-color: rgb(155, 2, 2);
+}
+
+
+
+
+.item{
+  min-width: 50vh;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  float: center;
+  justify-content:space-between;
+  background-color:white;
+  padding: 1rem;
+  margin:1.1rem;
+  border-radius: 0.5rem;
+  font-family: Verdana;
+  box-shadow: 1px 1px 10px #6b6b6b;
+}
+
+.edit-btn{
+  float:right;
+  color: green;
+}
+
+.delete-btn{
+  float:right;
+  color: red;
+}
+
+.expense{
+  text-align: left;
+}
+
+.charge{
   text-align: center;
 }
+
+
+
+
 

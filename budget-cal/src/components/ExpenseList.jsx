@@ -1,9 +1,22 @@
 import React from 'react'
 import Item from './ExpenseItem'
-const ExpenseList = () => {
+import {MdDelete} from 'react-icons/md'
+const ExpenseList = ({expenses}) => {
   return (
-    <div>ExpenseList</div>
-  )
-}
+  <>
+    <ul className="list">
+      {expenses.map((expense) => {
+        return <Item key={expense.id} expense={expense}/>
+      })}
+    </ul>
+
+  {expenses.length > 0 && (<button className="btn-clear">
+    Clear Expenses
+  <MdDelete className="btn-icon"/>
+  </button>)} 
+  </>
+    
+  );
+};
 
 export default ExpenseList

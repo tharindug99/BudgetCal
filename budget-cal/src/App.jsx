@@ -8,7 +8,7 @@ import { v4 as uuidv4 } from 'uuid';
 uuidv4();
 
 const InitialExpenses = [
-  {id: uuidv4(), charge: "rent", amount: 45000},
+  {id: uuidv4(), charge: "Rent", amount: 45000},
   {id: uuidv4(), charge: "Car Lease", amount: 22000},
   {id: uuidv4(), charge: "Food Expenses", amount: 10000},
 ];
@@ -19,18 +19,22 @@ const [expenses, setExpenses] = useState(InitialExpenses);
 //console.log(expenses);  
 return (
     <div className="App">
-      <h1>Budget Calculator</h1>
+      <div className="title">
+        <h1>Budget Calculator</h1></div>
+      
       <Alert/>
       <main className="app">
       <ExpenseForm/>
       <ExpenseList expenses={expenses}/>
       </main>
       <h1>
-        total spending : <span className='total'>
+        <div className = "answer">
+        Total Spending : <span className='total'>
           LKR {expenses.reduce((acc,curr)=>{
             return acc+= curr.amount;
           },0)}
         </span>
+        </div>
       </h1>
     </div>
   )
