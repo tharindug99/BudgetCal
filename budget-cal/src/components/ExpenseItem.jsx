@@ -6,9 +6,10 @@ const ExpenseItem = ({expense}) => {
     <li className="item">
       <div className="info">
         <span className="expense">{charge} </span>
-        <span className="amount">LKR {amount}</span>
         <button className="edit-btn"><MdEdit/></button>
         <button className="delete-btn"><MdDelete/></button>
+        <span className="amount">LKR {amount}</span>
+
       </div>
     </li>
   )

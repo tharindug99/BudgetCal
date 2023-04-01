@@ -5,7 +5,7 @@ body {
   margin: 0 ;
   padding: 0%;
   text-align: center;
-  background-color: rgb(181, 171, 171);
+  background-color: rgb(176, 171, 181);
   
 }
 
@@ -14,9 +14,11 @@ h1{
 }
 
 .title{
-  background-color: rgb(210, 137, 0);
+  background-color: rgb(43, 2, 139);
   padding: 2rem 1rem;
-  border-radius: 2rem;
+  position: fixed;
+  width: 100%;
+  margin-bottom: 5rem;
   color: white;
   letter-spacing: 3px;
   box-shadow: 2px 4px 6px #333;
@@ -24,7 +26,7 @@ h1{
 }
 
 .answer{
-  background-color: orange;
+  background-color: rgb(67, 0, 154);
   padding: 2rem 1rem;
   border-radius: 2rem;
   color: white;
@@ -54,25 +56,37 @@ h1{
 
 .item{
   min-width: 50vh;
-  display: flex;
+  display:block;
+  flex-direction: column;
   text-align: left;
   align-items: center;
   float: center;
+  margin-bottom: 0.5rem;
   justify-content:space-between;
   background-color:white;
   padding: 1rem;
-  margin:1.1rem;
   border-radius: 0.5rem;
   font-family: Verdana;
   box-shadow: 1px 1px 10px #6b6b6b;
 }
 
+.item:hover{
+  background-color:rgb(237, 237, 237);
+}
+
 .edit-btn{
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  margin-top: 0.2rem;
+  display:flex;
   float:right;
   color: green;
 }
 
 .delete-btn{
+  margin-top: 0.2rem;
+  padding: 0.5rem;
+  display:flex;
   float:right;
   color: red;
 }
@@ -81,10 +95,17 @@ h1{
   text-align: left;
 }
 
-.charge{
+.amount{
   text-align: center;
+  color: brown;
+  display: flex;
 }
 
+.list{
+  background-color:aliceblue;
+  padding: 3rem;
+  margin-top: 10rem;
+}
 
 
 
