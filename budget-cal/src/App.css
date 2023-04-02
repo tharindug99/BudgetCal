@@ -5,7 +5,7 @@ body {
   margin: 0 ;
   padding: 0%;
   text-align: center;
-  background-color: rgb(176, 171, 181);
+  background-color: rgb(255, 255, 255);
   
 }
 
@@ -43,8 +43,7 @@ h1{
   margin-top: 3rem;
   font-family: Oswald;
   font-weight: 1500;
-  border-radius: 1.2rem;
-  box-shadow: 1px 1px 1px #333;
+  
 }
 
 .btn-clear:hover{
@@ -102,10 +101,31 @@ h1{
 }
 
 .list{
-  background-color:aliceblue;
+  background-color:rgb(255, 255, 255);
   padding: 3rem;
-  margin-top: 10rem;
+  margin-top: 0rem;
 }
+
+.form-center{
+  color:rgb(67, 0, 154);
+  font-family: Verdana;
+  margin-top: 10rem;
+  background-color:rgb(255, 255, 255);
+}
+
+.form-group{
+  padding: 1rem;
+}
+
+.form-control{
+  padding: 0.2rem;
+  border-color: rgb(69, 3, 154);
+}
+
+.label{
+  padding: 1rem;
+}
+
 
 
 

@@ -8,15 +8,42 @@ import { v4 as uuidv4 } from 'uuid';
 uuidv4();
 
 const InitialExpenses = [
-  {id: uuidv4(), charge: "Rent", amount: 45000},
-  {id: uuidv4(), charge: "Car Lease", amount: 22000},
-  {id: uuidv4(), charge: "Food Expenses", amount: 10000},
+
 ];
 
 
 function App() {
+//*************state values *////////
+//*************all expenses, add expense *///
 const [expenses, setExpenses] = useState(InitialExpenses);
 //console.log(expenses);  
+//sigle expense
+const [charge, setCharge] = useState('')
+//sigle expense
+const [amount, setAmount] = useState('')
+
+
+//***********Functionality********* */
+const handleCharge = e => {
+  setCharge(e.target.value);
+  console.log(`Charge : ${e.target.value}`);
+};
+const handleAmount = e => {
+  setAmount(e.target.value);
+  console.log(`amount : ${e.target.value}`);
+};
+const handleSubmit = e => {
+  e.preventDefault();
+  if (charge !== "" && amount > 0) {
+    
+    console.log(amount , charge);
+    
+    const singleExpense = {id : uuidv4(), charge, amount};
+    setExpenses([... expenses, singleExpense]);
+  }else{
+    ///alert
+  }
+};
 return (
     <div className="App">
       <div className="title">
@@ -24,8 +51,14 @@ return (
       
       <Alert/>
       <main className="app">
-      <ExpenseForm/>
-      <ExpenseList expenses={expenses}/>
+      <ExpenseForm 
+      charge={charge} 
+      amount={amount} 
+      handleCharge={handleCharge}
+      handleAmount={handleAmount} 
+      handleSubmit={handleSubmit}/>
+      <ExpenseList 
+      expenses={expenses}/>
       </main>
       <h1>
         <div className = "answer">
