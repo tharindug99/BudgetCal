@@ -21,7 +21,8 @@ const [expenses, setExpenses] = useState(InitialExpenses);
 const [charge, setCharge] = useState('')
 //sigle expense
 const [amount, setAmount] = useState('')
-
+//alert
+const[alert, setAlert] = useState({show:false});
 
 //***********Functionality********* */
 const handleCharge = e => {
@@ -40,6 +41,8 @@ const handleSubmit = e => {
     
     const singleExpense = {id : uuidv4(), charge, amount};
     setExpenses([... expenses, singleExpense]);
+    setCharge("");
+    setAmount("");
   }else{
     ///alert
   }
@@ -64,7 +67,7 @@ return (
         <div className = "answer">
         Total Spending : <span className='total'>
           LKR {expenses.reduce((acc,curr)=>{
-            return acc+= curr.amount;
+            return (acc+= parseInt(curr.amount));
           },0)}
         </span>
         </div>

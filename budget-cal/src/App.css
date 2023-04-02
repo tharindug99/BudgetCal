@@ -66,7 +66,7 @@ h1{
   padding: 1rem;
   border-radius: 0.5rem;
   font-family: Verdana;
-  box-shadow: 1px 1px 10px #6b6b6b;
+  box-shadow: 1px 1px 10px rgb(69, 3, 154);;
 }
 
 .item:hover{
