@@ -38,9 +38,17 @@ const ExpenseForm = ({
           
           
         </div>
+        
+
+        <div className="form-group">
         <button type="submit" className="submit-btn">
-        Submit<MdSend className="submit-btn-1"/>
-      </button>
+          <p className="sbmit-btn-text">Submit</p>
+        <MdSend className="submit-btn-1"/>
+        </button>
+        </div>
+        
+       
+        
       </div>
 
       

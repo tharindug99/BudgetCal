@@ -51,8 +51,6 @@ h1{
 }
 
 
-
-
 .item{
   min-width: 50vh;
   display:block;
@@ -111,9 +109,11 @@ h1{
   font-family: Verdana;
   margin-top: 10rem;
   background-color:rgb(255, 255, 255);
+  align-items: center;
 }
 
 .form-group{
+  align-items: center;
   padding: 1rem;
 }
 
@@ -126,7 +126,36 @@ h1{
   padding: 1rem;
 }
 
+.submit-btn{
+  border-color: rgb(69, 3, 154);
+  border-radius: 0.8rem;
+  background-color: transparent;
+  color: rgb(69, 3, 154); 
+  font-size: 16px;
+  align-content: center;
+  display:flex;
+  flex-direction: row;   
+  align-items: center;
+  margin-left: 20rem;
+}
 
 
+.sbmit-btn-text{
+  margin: 0px;
+  padding-left: 0.4rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 
+@media screen and (width:400px) {
+  .submit-btn{
+      margin-left: 140px;
+  }
+}
 
+@media screen and (width:1200px) {
+  .submit-btn{
+      margin-left: 120px;
+  }
+}

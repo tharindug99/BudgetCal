@@ -21,8 +21,7 @@ const [expenses, setExpenses] = useState(InitialExpenses);
 const [charge, setCharge] = useState('')
 //sigle expense
 const [amount, setAmount] = useState('')
-//alert
-const[alert, setAlert] = useState({show:false});
+
 
 //***********Functionality********* */
 const handleCharge = e => {
