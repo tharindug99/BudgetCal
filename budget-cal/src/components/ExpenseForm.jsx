@@ -6,7 +6,8 @@ const ExpenseForm = ({
   amount,
   handleAmount,
   handleCharge,
-  handleSubmit
+  handleSubmit,
+  edit
 }) => {
   return (
     <form onSubmit={handleSubmit}>
@@ -42,7 +43,9 @@ const ExpenseForm = ({
 
         <div className="form-group">
         <button type="submit" className="submit-btn">
-          <p className="sbmit-btn-text">Submit</p>
+          <p className="sbmit-btn-text">
+            {edit ? 'Edit':'Submit'}
+          </p>
         <MdSend className="submit-btn-1"/>
         </button>
         </div>
